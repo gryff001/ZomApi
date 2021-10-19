@@ -1,0 +1,26 @@
+<% layout('layout')-%>
+<form method="post">
+    <div class="mb-3">
+      <label for="orderText" class="form-label">Description</label>
+      <input type="text" class="form-control" id="Description" aria-describedby="Des">
+      <div id="Description" class="form-text">Description</div>
+    </div>
+    <div class="mb-3">
+      <label for="Location" class="form-label">Start Lpocation</label>
+      <input type="location" class="form-control" id="Slocation">
+    </div>
+    <div class="mb-3">
+        <label for="Location" class="form-label">End Lpocation</label>
+        <input type="location" class="form-control" id="Elocation">
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Rider</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    <button type="submit" class="btn btn-primary">Assign Order</button>
+  </form>
